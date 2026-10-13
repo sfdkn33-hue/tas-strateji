@@ -1,0 +1,18 @@
+TAŞ STRATEJİ v32 — PWA RELEASE
+
+Oyun motoru / kurallar / AI: v31 ile aynı.
+
+EKLENENLER
+- manifest.webmanifest
+- sw.js çevrimdışı önbellek
+- 192x192 ve 512x512 uygulama ikonları
+- Apple touch icon
+- 1200x630 sosyal paylaşım önizlemesi
+- Open Graph / Twitter Card meta etiketleri
+- canonical URL ve mobil uygulama meta etiketleri
+
+KURULUM
+1. Bu paketteki tüm dosyaları repo köküne yükleyin.
+2. Var olan index.html dosyasını bu paketteki index.html ile değiştirin.
+3. Pages ayarı main / (root) olarak kalsın.
+4. Yayından sonra siteyi bir kez çevrimiçi açın. Daha sonraki açılışlarda çevrimdışı destek devreye girer.

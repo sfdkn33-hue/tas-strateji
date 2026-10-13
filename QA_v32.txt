@@ -1,0 +1,10 @@
+TAŞ STRATEJİ v32 — Yayın Sonrası QA
+
+[ ] Canlı URL açılıyor
+[ ] Menü ve oyun v31 ile aynı çalışıyor
+[ ] Chrome/Android: Tarayıcı menüsünde "Ana ekrana ekle / Uygulamayı yükle" görünüyor
+[ ] Ana ekrandan açıldığında tarayıcı çubuğu olmadan standalone açılıyor
+[ ] İlk çevrimiçi açılıştan sonra uçak modunda oyun tekrar açılıyor
+[ ] WhatsApp'a bağlantı yapıştırıldığında başlık/açıklama/görsel oluşuyor (önbellek nedeniyle gecikebilir)
+[ ] Tema ve oyun tercihleri localStorage ile korunuyor
+[ ] Yeni sürüm yüklenince sayfayı yeniledikten sonra güncel sürüm geliyor

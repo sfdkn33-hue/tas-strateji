@@ -4,6 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>TAŞ STRATEJİ</title>
+<meta name="description" content="TAŞ STRATEJİ — taş dağıtma, rota seçimi ve sütun toplama üzerine hızlı bir strateji oyunu. Tek oyuncu ve yerel iki oyuncu modları.">
+<meta name="theme-color" content="#111318">
+<meta name="color-scheme" content="dark light">
+<meta name="application-name" content="TAŞ STRATEJİ">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="TAŞ STRATEJİ">
+<link rel="canonical" href="https://sfdkn33-hue.github.io/tas-strateji/">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="TAŞ STRATEJİ">
+<meta property="og:description" content="Taş dağıt, rotanı seç, sütunları topla. Tek oyuncu ve yerel iki oyuncu strateji oyunu.">
+<meta property="og:url" content="https://sfdkn33-hue.github.io/tas-strateji/">
+<meta property="og:image" content="https://sfdkn33-hue.github.io/tas-strateji/social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TAŞ STRATEJİ oyun panosu">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TAŞ STRATEJİ">
+<meta name="twitter:description" content="Taş dağıt, rotanı seç, sütunları topla.">
+<meta name="twitter:image" content="https://sfdkn33-hue.github.io/tas-strateji/social-preview.png">
+
 <style>
 :root{
   --bg:#111318;
@@ -2744,7 +2770,17 @@ reset(false);
 updateContinueButton();
 menuOverlay.classList.add('show');
 
-// TAŞ STRATEJİ v31 PRODUCTION POLISH — TR/EN/DE/ES/FR/PT-BR/AR
+
+// v32 PWA katmanı: oyun motoruna dokunmadan çevrimdışı kurulum desteği.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js', { scope: './' }).catch(err => {
+      console.warn('Service worker kaydı başarısız:', err);
+    });
+  });
+}
+
+// TAŞ STRATEJİ v32 PWA RELEASE — TR/EN/DE/ES/FR/PT-BR/AR
 </script>
 </body>
 </html>
